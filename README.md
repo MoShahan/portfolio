@@ -1,5 +1,7 @@
 # Mohammed Shahan — Portfolio
 
+**Live:** [https://mohammed-shahan.vercel.app](https://mohammed-shahan.vercel.app)
+
 Personal site for [Mohammed Shahan](https://github.com/MoShahan), a frontend engineer (full-stack with a frontend focus). One dark, mobile-first page. No blog.
 
 **Open to work** — frontend and full-stack (frontend-focus) roles.
@@ -20,7 +22,7 @@ Personal site for [Mohammed Shahan](https://github.com/MoShahan), a frontend eng
 - [Next.js](https://nextjs.org/) (App Router) + React + TypeScript
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Vitest](https://vitest.dev/) + Testing Library
-- Hosted on [Vercel](https://vercel.com/) (recommended)
+- Hosted on [Vercel](https://mohammed-shahan.vercel.app)
 
 ## Getting started
 

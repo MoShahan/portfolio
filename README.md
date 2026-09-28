@@ -2,7 +2,7 @@
 
 **Live:** [https://mohammed-shahan.vercel.app](https://mohammed-shahan.vercel.app)
 
-Personal site for [Mohammed Shahan](https://github.com/MoShahan), a frontend engineer (full-stack with a frontend focus). One dark, mobile-first page. No blog.
+Personal site for [Mohammed Shahan](https://github.com/MoShahan), a frontend engineer (full-stack with a frontend focus).
 
 **Open to work** - frontend and full-stack (frontend-focus) roles.
 
@@ -13,7 +13,6 @@ Personal site for [Mohammed Shahan](https://github.com/MoShahan), a frontend eng
 
 - Sticky identity + section nav on desktop; stacked layout on mobile
 - About, selected work, experience, skills, education, contact
-- Honest employment timeline: Razorpay assignment listed as **Contract via Cognitive Clouds**
 - Project covers, résumé PDF, copy-email control
 - Accessible markup, skip link, visible focus, `prefers-reduced-motion`
 

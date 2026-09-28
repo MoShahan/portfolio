@@ -9,17 +9,21 @@ describe("Projects", () => {
 
     expect(screen.getByRole("img", { name: /HiLite Sales/i })).toBeInTheDocument();
     expect(
-      screen.getByRole("link", { name: "Live demo" }),
-    ).toHaveAttribute(
-      "href",
+      screen.getAllByRole("link", { name: "Live demo" }).map((link) =>
+        link.getAttribute("href"),
+      ),
+    ).toEqual([
+      "https://ledger-parser-production.up.railway.app/",
       "https://agetware-ecommerce.vercel.app/login",
-    );
+    ]);
     expect(
       screen.getAllByRole("link", { name: "GitHub" }).map((link) =>
         link.getAttribute("href"),
       ),
     ).toEqual([
+      "https://github.com/MoShahan/ledger-parser",
       "https://github.com/MoShahan/agetware-ecommerce",
+      "https://github.com/MoShahan/react-theatre-booking",
       "https://github.com/MoShahan/comic-reader-app",
     ]);
   });

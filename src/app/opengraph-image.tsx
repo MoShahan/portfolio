@@ -25,8 +25,9 @@ export default function OpenGraphImage() {
         <div style={{ fontSize: 72, fontWeight: 500, marginTop: 16 }}>
           Mohammed Shahan
         </div>
-        <div style={{ fontSize: 28, color: "#8b96a6", marginTop: 20, maxWidth: 820 }}>
-          React, TypeScript, Next.js. Open to frontend and full-stack roles.
+        <div style={{ fontSize: 28, color: "#8b96a6", marginTop: 20, maxWidth: 980 }}>
+          React, TypeScript, Next.js, Angular, Vue, Express. Open to frontend
+          and full-stack roles.
         </div>
       </div>
     ),

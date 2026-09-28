@@ -14,18 +14,18 @@ export function SiteHeader() {
         <p className="mt-5 max-w-sm text-base leading-relaxed text-muted">
           {site.headline}
         </p>
-        <p className="mt-6 flex items-start gap-2 text-sm text-muted">
-          <span
-            className="mt-1.5 h-2 w-2 shrink-0 bg-accent"
-            aria-hidden="true"
-          />
-          <span>
-            <span className="font-medium text-accent">
-              {site.availability.label}.
-            </span>{" "}
+        <div className="mt-6">
+          <p className="inline-flex items-center gap-2 border border-accent/35 bg-accent/10 px-3 py-1.5 text-sm text-text">
+            <span
+              className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent"
+              aria-hidden="true"
+            />
+            <span className="font-medium">{site.availability.label}</span>
+          </p>
+          <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted">
             {site.availability.detail}
-          </span>
-        </p>
+          </p>
+        </div>
         <div className="mt-12">
           <SectionNav />
         </div>

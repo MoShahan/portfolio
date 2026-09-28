@@ -5,7 +5,7 @@ export const site = {
     "I build React and TypeScript interfaces for web and mobile, and the API when a feature has to be complete.",
   availability: {
     label: "Open to work",
-    detail: "Frontend and full-stack (frontend-focus)",
+    detail: "Frontend roles, or full-stack with a frontend focus",
   },
   email: "mohamadshahan@gmail.com",
   resumeHref: "/resume.pdf",
@@ -104,6 +104,18 @@ export const site = {
       imageAlt: "HiLite Sales dashboard with widgets, charts, and notifications",
     },
     {
+      title: "Ledger Parse",
+      period: "September 2026",
+      summary:
+        "Invoice review UI: upload a PDF, Gemini fills a fixed schema, a validator flags mismatches, and you confirm or edit. Your edit is the source of truth. React/Vite frontend over Express and Postgres, with extract jobs that retry independently of the file.",
+      liveHref: "https://ledger-parser-production.up.railway.app/",
+      githubHref: "https://github.com/MoShahan/ledger-parser",
+      tags: ["React", "Vite", "Express", "PostgreSQL", "Gemini"],
+      image: "/projects/ledger-parser.png",
+      imageAlt:
+        "Ledger Parse review screen with a PDF invoice beside extracted fields",
+    },
+    {
       title: "Aget.Co",
       period: "February 2025",
       summary:
@@ -113,6 +125,17 @@ export const site = {
       tags: ["Next.js", "TypeScript", "Material UI", "Firebase Auth", "Jest"],
       image: "/projects/aget-co.png",
       imageAlt: "Aget.Co storefront with product grid, search, and filters",
+    },
+    {
+      title: "Theatre Seats",
+      period: "July 2026",
+      summary:
+        "Interactive theatre seat map with VIP, Premium, and General tiers. Select seats, apply promo codes with rules, and confirm bookings with a GST and convenience-fee breakdown - all client-side, no backend.",
+      githubHref: "https://github.com/MoShahan/react-theatre-booking",
+      tags: ["React", "TypeScript", "Vite", "Vitest"],
+      image: "/projects/theatre-seats.png",
+      imageAlt:
+        "Theatre Seats booking UI with a color-coded seat map and order summary",
     },
     {
       title: "Kanban Task Board",

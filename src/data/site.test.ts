@@ -12,7 +12,7 @@ describe("site content", () => {
     expect(site.name).toBe("Mohammed Shahan");
     expect(site.role).toBe("Frontend Engineer");
     expect(site.availability.label).toBe("Open to work");
-    expect(site.availability.detail).toMatch(/frontend-focus/i);
+    expect(site.availability.detail).toMatch(/frontend focus/i);
     expect(site.email).toBe("mohamadshahan@gmail.com");
   });
 
@@ -44,8 +44,8 @@ describe("site content", () => {
     expect(ids).toEqual(["github", "linkedin", "x", "hackerrank"]);
   });
 
-  it("features four projects with images on disk", () => {
-    expect(site.projects).toHaveLength(4);
+  it("features six projects with images on disk", () => {
+    expect(site.projects).toHaveLength(6);
 
     for (const project of site.projects) {
       expect(project.image).toMatch(/^\/projects\//);
@@ -54,9 +54,16 @@ describe("site content", () => {
       );
     }
 
-    const aget = site.projects.find((project) => project.title === "Aget.Co");
-    expect(aget && "liveHref" in aget && aget.liveHref).toBe(
-      "https://agetware-ecommerce.vercel.app/login",
+    const ledger = site.projects.find((project) => project.title === "Ledger Parse");
+    expect(ledger && "liveHref" in ledger && ledger.liveHref).toBe(
+      "https://ledger-parser-production.up.railway.app/",
+    );
+
+    const theatre = site.projects.find(
+      (project) => project.title === "Theatre Seats",
+    );
+    expect(theatre && "githubHref" in theatre && theatre.githubHref).toBe(
+      "https://github.com/MoShahan/react-theatre-booking",
     );
   });
 

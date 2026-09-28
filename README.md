@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mohammed Shahan — Portfolio
 
-## Getting Started
+Personal site for [Mohammed Shahan](https://github.com/MoShahan), a frontend engineer (full-stack with a frontend focus). One dark, mobile-first page. No blog.
 
-First, run the development server:
+**Open to work** — frontend and full-stack (frontend-focus) roles.
+
+- Email: [mohamadshahan@gmail.com](mailto:mohamadshahan@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/moshahan786) · [GitHub](https://github.com/MoShahan) · [X](https://x.com/shahan786) · [HackerRank](https://www.hackerrank.com/profile/MoShahan)
+
+## Features
+
+- Sticky identity + section nav on desktop; stacked layout on mobile
+- About, selected work, experience, skills, education, contact
+- Honest employment timeline: Razorpay assignment listed as **Contract via Cognitive Clouds**
+- Project covers, résumé PDF, copy-email control
+- Accessible markup, skip link, visible focus, `prefers-reduced-motion`
+
+## Tech stack
+
+- [Next.js](https://nextjs.org/) (App Router) + React + TypeScript
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vitest](https://vitest.dev/) + Testing Library
+- Hosted on [Vercel](https://vercel.com/) (recommended)
+
+## Getting started
 
 ```bash
+git clone https://github.com/MoShahan/portfolio.git
+cd portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+If this repo uses a different name on GitHub, change the clone URL accordingly.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts
 
-## Learn More
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Local development server |
+| `npm run build` | Production build |
+| `npm start` | Serve the production build |
+| `npm run lint` | ESLint |
+| `npm test` | Unit / component tests |
+| `npm run test:watch` | Vitest watch mode |
+| `npm run test:coverage` | Tests plus coverage report (`coverage/`) |
 
-To learn more about Next.js, take a look at the following resources:
+## CI
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Two GitHub Actions workflows run on push and pull requests to `master` / `main`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Lint](.github/workflows/lint.yml) — `npm run lint`
+- [Test](.github/workflows/test.yml) — `npm test`
 
-## Deploy on Vercel
+## Project structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+  app/            # layout, page, icons, Open Graph image
+  components/     # page sections and UI
+  data/site.ts    # all copy (jobs, projects, socials)
+  test/           # Vitest setup
+public/
+  resume.pdf
+  projects/       # project cover images
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Edit content in [`src/data/site.ts`](src/data/site.ts). Replace `public/resume.pdf` to update the résumé. Swap files in `public/projects/` (keep the same names) for real screenshots.
+
+## License
+
+Private personal portfolio. Source is published so the site can be reviewed; please do not reuse the content as your own.

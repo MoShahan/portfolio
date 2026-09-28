@@ -1,10 +1,10 @@
-# Mohammed Shahan — Portfolio
+# Mohammed Shahan - Portfolio
 
 **Live:** [https://mohammed-shahan.vercel.app](https://mohammed-shahan.vercel.app)
 
 Personal site for [Mohammed Shahan](https://github.com/MoShahan), a frontend engineer (full-stack with a frontend focus). One dark, mobile-first page. No blog.
 
-**Open to work** — frontend and full-stack (frontend-focus) roles.
+**Open to work** - frontend and full-stack (frontend-focus) roles.
 
 - Email: [mohamadshahan@gmail.com](mailto:mohamadshahan@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/moshahan786) · [GitHub](https://github.com/MoShahan) · [X](https://x.com/shahan786) · [HackerRank](https://www.hackerrank.com/profile/MoShahan)
@@ -53,8 +53,8 @@ If this repo uses a different name on GitHub, change the clone URL accordingly.
 
 Two GitHub Actions workflows run on push and pull requests to `master` / `main`:
 
-- [Lint](.github/workflows/lint.yml) — `npm run lint`
-- [Test](.github/workflows/test.yml) — `npm test`
+- [Lint](.github/workflows/lint.yml) - `npm run lint`
+- [Test](.github/workflows/test.yml) - `npm test`
 
 ## Project structure
 

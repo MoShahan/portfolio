@@ -21,7 +21,7 @@ const mono = IBM_Plex_Mono({
   weight: ["400", "500"],
 });
 
-const title = "Mohammed Shahan — Frontend Engineer";
+const title = "Mohammed Shahan - Frontend Engineer";
 const description =
   "Frontend engineer with 4 years of experience building React, TypeScript, and Next.js interfaces. Open to frontend and full-stack (frontend-focus) roles.";
 

@@ -46,7 +46,7 @@ export const site = {
       end: "May 2026",
       location: "Bangalore, India",
       bullets: [
-        "Shipped frontend modules for a large-scale fintech loyalty platform using React, TypeScript, and Angular — gift vouchers, premium memberships, and partner offers for banks across India.",
+        "Shipped frontend modules for a large-scale fintech loyalty platform using React, TypeScript, and Angular - gift vouchers, premium memberships, and partner offers for banks across India.",
         "Built reusable React and TypeScript component libraries to standardize UI patterns and speed up new loyalty features.",
         "Integrated REST APIs for offer fulfillment and membership lifecycle, working with cross-functional teams from scoping to production.",
       ],
@@ -60,7 +60,7 @@ export const site = {
       end: "May 2024",
       location: "Bangalore, India",
       bullets: [
-        "Developed and maintained web and mobile applications for clients using React, Vue.js, and React Native with TypeScript — including DoveMed MyCircles (web and iOS/Android).",
+        "Developed and maintained web and mobile applications for clients using React, Vue.js, and React Native with TypeScript - including DoveMed MyCircles (web and iOS/Android).",
         "Implemented responsive, accessible UI components and used Jest to keep frontend releases stable.",
         "Promoted from trainee within five months based on consistent delivery of production-ready features.",
       ],
@@ -98,7 +98,7 @@ export const site = {
       title: "HiLite Sales",
       period: "June 2026 – August 2026",
       summary:
-        "Multi-tenant sales ERP with org-isolated users, teams, and RBAC. I built the React UI — role-scoped dashboards, customizable widgets, in-app notifications — and the Express/Prisma/Postgres layer as a TypeScript monorepo with shared Zod schemas and cookie-based auth.",
+        "Multi-tenant sales ERP with org-isolated users, teams, and RBAC. I built the React UI - role-scoped dashboards, customizable widgets, in-app notifications - and the Express/Prisma/Postgres layer as a TypeScript monorepo with shared Zod schemas and cookie-based auth.",
       tags: ["React", "PostgreSQL", "Prisma", "Express"],
       image: "/projects/hilite-sales.png",
       imageAlt: "HiLite Sales dashboard with widgets, charts, and notifications",

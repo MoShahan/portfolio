@@ -13,6 +13,7 @@ describe("Projects", () => {
         link.getAttribute("href"),
       ),
     ).toEqual([
+      "https://xivi.vercel.app",
       "https://ledger-parser-production.up.railway.app/",
       "https://agetware-ecommerce.vercel.app/login",
     ]);
@@ -21,6 +22,7 @@ describe("Projects", () => {
         link.getAttribute("href"),
       ),
     ).toEqual([
+      "https://github.com/MoShahan/xivi",
       "https://github.com/MoShahan/ledger-parser",
       "https://github.com/MoShahan/agetware-ecommerce",
       "https://github.com/MoShahan/react-theatre-booking",

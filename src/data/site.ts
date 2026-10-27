@@ -95,6 +95,17 @@ export const site = {
   ],
   projects: [
     {
+      title: "Xivi",
+      period: "September 2023 – October 2026",
+      summary:
+        "Full-stack social app: posts with images, likes, comments, friend requests, and one-way follows. Next.js and Material UI on the frontend; Express, MongoDB, and JWT on the API, with OAuth, notifications, and admin feature flags.",
+      liveHref: "https://xivi.vercel.app",
+      githubHref: "https://github.com/MoShahan/xivi",
+      tags: ["Next.js", "Express", "MongoDB", "Material UI", "JWT"],
+      image: "/projects/xivi.png",
+      imageAlt: "Xivi home feed with a left sidebar and Everyone / Following tabs",
+    },
+    {
       title: "HiLite Sales",
       period: "June 2026 – August 2026",
       summary:

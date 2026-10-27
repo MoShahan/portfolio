@@ -44,8 +44,8 @@ describe("site content", () => {
     expect(ids).toEqual(["github", "linkedin", "x", "hackerrank"]);
   });
 
-  it("features six projects with images on disk", () => {
-    expect(site.projects).toHaveLength(6);
+  it("features seven projects with images on disk", () => {
+    expect(site.projects).toHaveLength(7);
 
     for (const project of site.projects) {
       expect(project.image).toMatch(/^\/projects\//);
@@ -53,6 +53,14 @@ describe("site content", () => {
         true,
       );
     }
+
+    const xivi = site.projects.find((project) => project.title === "Xivi");
+    expect(xivi && "liveHref" in xivi && xivi.liveHref).toBe(
+      "https://xivi.vercel.app",
+    );
+    expect(xivi && "githubHref" in xivi && xivi.githubHref).toBe(
+      "https://github.com/MoShahan/xivi",
+    );
 
     const ledger = site.projects.find((project) => project.title === "Ledger Parse");
     expect(ledger && "liveHref" in ledger && ledger.liveHref).toBe(

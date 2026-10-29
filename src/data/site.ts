@@ -106,7 +106,7 @@ export const site = {
       imageAlt: "Xivi home feed with a left sidebar and Everyone / Following tabs",
     },
     {
-      title: "HiLite Sales",
+      title: "Tandem",
       period: "June 2026 – August 2026",
       summary:
         "Multi-tenant sales ERP with org-isolated users, teams, and RBAC. I built the React UI - role-scoped dashboards, customizable widgets, in-app notifications - and the Express/Prisma/Postgres layer as a TypeScript monorepo with shared Zod schemas and cookie-based auth.",

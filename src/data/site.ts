@@ -99,7 +99,7 @@ export const site = {
       period: "September 2023 – October 2026",
       summary:
         "Full-stack social app: posts with images, likes, comments, friend requests, and one-way follows. Next.js and Material UI on the frontend; Express, MongoDB, and JWT on the API, with OAuth, notifications, and admin feature flags.",
-      liveHref: "https://xivi.vercel.app",
+      liveHref: "https://xivi.vercel.app/",
       githubHref: "https://github.com/MoShahan/xivi",
       tags: ["Next.js", "Express", "MongoDB", "Material UI", "JWT"],
       image: "/projects/xivi.png",
@@ -131,8 +131,8 @@ export const site = {
       period: "February 2025",
       summary:
         "Responsive e-commerce storefront: catalog search, category filters, cart, wishlist, and checkout. Public product API plus Firebase email/password auth, gated with Next.js middleware.",
-      liveHref: "https://agetware-ecommerce.vercel.app/login",
-      githubHref: "https://github.com/MoShahan/agetware-ecommerce",
+      liveHref: "https://trove-shop.vercel.app/",
+      githubHref: "https://github.com/MoShahan/trove",
       tags: ["Next.js", "TypeScript", "Material UI", "Firebase Auth", "Jest"],
       image: "/projects/aget-co.png",
       imageAlt: "Trove storefront with product grid, search, and filters",

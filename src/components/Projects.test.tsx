@@ -7,15 +7,15 @@ describe("Projects", () => {
   it("shows live and source links only when they exist", () => {
     render(<Projects />);
 
-    expect(screen.getByRole("img", { name: /HiLite Sales/i })).toBeInTheDocument();
+    expect(screen.getByRole("img", { name: /Tandem/i })).toBeInTheDocument();
     expect(
       screen.getAllByRole("link", { name: "Live demo" }).map((link) =>
         link.getAttribute("href"),
       ),
     ).toEqual([
-      "https://xivi.vercel.app",
+      "https://xivi.vercel.app/",
       "https://ledger-parser-production.up.railway.app/",
-      "https://agetware-ecommerce.vercel.app/login",
+      "https://trove-shop.vercel.app/",
     ]);
     expect(
       screen.getAllByRole("link", { name: "GitHub" }).map((link) =>
@@ -24,7 +24,7 @@ describe("Projects", () => {
     ).toEqual([
       "https://github.com/MoShahan/xivi",
       "https://github.com/MoShahan/ledger-parser",
-      "https://github.com/MoShahan/agetware-ecommerce",
+      "https://github.com/MoShahan/trove",
       "https://github.com/MoShahan/react-theatre-booking",
       "https://github.com/MoShahan/comic-reader-app",
     ]);
@@ -34,11 +34,11 @@ describe("Projects", () => {
     render(<Projects />);
 
     expect(
-      screen.queryByRole("link", { name: /HiLite Sales/i }),
+      screen.queryByRole("link", { name: /Tandem/i }),
     ).not.toBeInTheDocument();
     expect(
       screen.queryByRole("link", { name: /Kanban Task Board/i }),
     ).not.toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "HiLite Sales" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Tandem" })).toBeInTheDocument();
   });
 });

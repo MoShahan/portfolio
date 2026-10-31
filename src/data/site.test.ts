@@ -56,7 +56,7 @@ describe("site content", () => {
 
     const xivi = site.projects.find((project) => project.title === "Xivi");
     expect(xivi && "liveHref" in xivi && xivi.liveHref).toBe(
-      "https://xivi.vercel.app",
+      "https://xivi.vercel.app/",
     );
     expect(xivi && "githubHref" in xivi && xivi.githubHref).toBe(
       "https://github.com/MoShahan/xivi",

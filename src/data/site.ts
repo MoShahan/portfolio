@@ -106,13 +106,13 @@ export const site = {
       imageAlt: "Xivi home feed with a left sidebar and Everyone / Following tabs",
     },
     {
-      title: "HiLite Sales",
+      title: "Tandem",
       period: "June 2026 – August 2026",
       summary:
         "Multi-tenant sales ERP with org-isolated users, teams, and RBAC. I built the React UI - role-scoped dashboards, customizable widgets, in-app notifications - and the Express/Prisma/Postgres layer as a TypeScript monorepo with shared Zod schemas and cookie-based auth.",
       tags: ["React", "PostgreSQL", "Prisma", "Express"],
       image: "/projects/hilite-sales.png",
-      imageAlt: "HiLite Sales dashboard with widgets, charts, and notifications",
+      imageAlt: "Tandem dashboard with widgets, charts, and notifications",
     },
     {
       title: "Ledger Parse",
@@ -127,7 +127,7 @@ export const site = {
         "Ledger Parse review screen with a PDF invoice beside extracted fields",
     },
     {
-      title: "Aget.Co",
+      title: "Trove",
       period: "February 2025",
       summary:
         "Responsive e-commerce storefront: catalog search, category filters, cart, wishlist, and checkout. Public product API plus Firebase email/password auth, gated with Next.js middleware.",
@@ -135,7 +135,7 @@ export const site = {
       githubHref: "https://github.com/MoShahan/agetware-ecommerce",
       tags: ["Next.js", "TypeScript", "Material UI", "Firebase Auth", "Jest"],
       image: "/projects/aget-co.png",
-      imageAlt: "Aget.Co storefront with product grid, search, and filters",
+      imageAlt: "Trove storefront with product grid, search, and filters",
     },
     {
       title: "Theatre Seats",

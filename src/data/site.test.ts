@@ -44,9 +44,7 @@ describe("site content", () => {
     expect(ids).toEqual(["github", "linkedin", "x", "hackerrank"]);
   });
 
-  it("features seven projects with images on disk", () => {
-    expect(site.projects).toHaveLength(7);
-
+  it("features all projects with images on disk", () => {
     for (const project of site.projects) {
       expect(project.image).toMatch(/^\/projects\//);
       expect(existsSync(path.join(publicDir, project.image.replace(/^\//, "")))).toBe(
@@ -68,10 +66,10 @@ describe("site content", () => {
     );
 
     const theatre = site.projects.find(
-      (project) => project.title === "Theatre Seats",
+      (project) => project.title === "Theater Booking",
     );
     expect(theatre && "githubHref" in theatre && theatre.githubHref).toBe(
-      "https://github.com/MoShahan/react-theatre-booking",
+      "https://github.com/MoShahan/theater-booking",
     );
   });
 

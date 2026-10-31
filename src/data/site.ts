@@ -110,6 +110,8 @@ export const site = {
       period: "June 2026 – August 2026",
       summary:
         "Multi-tenant sales ERP with org-isolated users, teams, and RBAC. I built the React UI - role-scoped dashboards, customizable widgets, in-app notifications - and the Express/Prisma/Postgres layer as a TypeScript monorepo with shared Zod schemas and cookie-based auth.",
+      liveHref: "https://tandemcrm.vercel.app/",
+      githubHref: "https://github.com/MoShahan/tandem",
       tags: ["React", "PostgreSQL", "Prisma", "Express"],
       image: "/projects/hilite-sales.png",
       imageAlt: "Tandem dashboard with widgets, charts, and notifications",
@@ -138,21 +140,24 @@ export const site = {
       imageAlt: "Trove storefront with product grid, search, and filters",
     },
     {
-      title: "Theatre Seats",
+      title: "Theater Booking",
       period: "July 2026",
       summary:
         "Interactive theatre seat map with VIP, Premium, and General tiers. Select seats, apply promo codes with rules, and confirm bookings with a GST and convenience-fee breakdown - all client-side, no backend.",
-      githubHref: "https://github.com/MoShahan/react-theatre-booking",
+      liveHref: "https://moshahan.github.io/theater-booking/",
+      githubHref: "https://github.com/MoShahan/theater-booking",
       tags: ["React", "TypeScript", "Vite", "Vitest"],
       image: "/projects/theatre-seats.png",
       imageAlt:
-        "Theatre Seats booking UI with a color-coded seat map and order summary",
+        "Theatre booking UI with a color-coded seat map and order summary",
     },
     {
-      title: "Kanban Task Board",
+      title: " Task Board",
       period: "August 2026",
       summary:
         "Local Kanban board for planning work, persisted in localStorage with no backend. Drag-and-drop and keyboard moves across columns, add/edit/delete modals, search, sort, overdue highlighting, and a light/dark theme.",
+      liveHref: "https://moshahan.github.io/tasks-board/",
+      githubHref: "https://github.com/MoShahan/tasks-board",
       tags: ["React", "TypeScript", "Vite", "Tailwind CSS"],
       image: "/projects/kanban.png",
       imageAlt: "Kanban board with To do, In progress, and Done columns",

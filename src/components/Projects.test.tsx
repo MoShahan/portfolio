@@ -9,36 +9,29 @@ describe("Projects", () => {
 
     expect(screen.getByRole("img", { name: /Tandem/i })).toBeInTheDocument();
     expect(
-      screen.getAllByRole("link", { name: "Live demo" }).map((link) =>
-        link.getAttribute("href"),
-      ),
+      screen
+        .getAllByRole("link", { name: "Live demo" })
+        .map((link) => link.getAttribute("href")),
     ).toEqual([
       "https://xivi.vercel.app/",
+      "https://tandemcrm.vercel.app/",
       "https://ledger-parser-production.up.railway.app/",
       "https://trove-shop.vercel.app/",
+      "https://moshahan.github.io/theater-booking/",
+      "https://moshahan.github.io/tasks-board/",
     ]);
     expect(
-      screen.getAllByRole("link", { name: "GitHub" }).map((link) =>
-        link.getAttribute("href"),
-      ),
+      screen
+        .getAllByRole("link", { name: "GitHub" })
+        .map((link) => link.getAttribute("href")),
     ).toEqual([
       "https://github.com/MoShahan/xivi",
+      "https://github.com/MoShahan/tandem",
       "https://github.com/MoShahan/ledger-parser",
       "https://github.com/MoShahan/trove",
-      "https://github.com/MoShahan/react-theatre-booking",
-      "https://github.com/MoShahan/comic-reader-app",
+      "https://github.com/MoShahan/theater-booking",
+      "https://github.com/MoShahan/tasks-board",
+      "https://github.com/MoShahan/comic-reader-app"
     ]);
-  });
-
-  it("does not turn HiLite or Kanban titles into links without URLs", () => {
-    render(<Projects />);
-
-    expect(
-      screen.queryByRole("link", { name: /Tandem/i }),
-    ).not.toBeInTheDocument();
-    expect(
-      screen.queryByRole("link", { name: /Kanban Task Board/i }),
-    ).not.toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Tandem" })).toBeInTheDocument();
   });
 });

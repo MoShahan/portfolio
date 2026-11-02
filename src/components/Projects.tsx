@@ -92,6 +92,57 @@ export function Projects() {
           );
         })}
       </ul>
+      <h3
+        id="side-projects-heading"
+        className="font-serif mt-16 text-lg font-medium text-text"
+      >
+        Side projects
+      </h3>
+      <p className="mt-2 max-w-md text-sm leading-6 text-muted">
+        Smaller bots and scripts I built for myself.
+      </p>
+      <ul className="mt-6 divide-y divide-border border-y border-border">
+        {site.sideProjects.map((project) => (
+          <li key={project.title} className="py-4">
+            <h4 className="text-base font-medium text-text">
+              {"githubHref" in project && project.githubHref ? (
+                <a
+                  href={project.githubHref}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-1.5 hover:text-accent"
+                >
+                  {project.title}
+                  <ArrowUpRightIcon className="h-4 w-4 opacity-60" />
+                </a>
+              ) : (
+                project.title
+              )}
+            </h4>
+            <p className="mt-1 text-sm leading-6 text-muted">{project.summary}</p>
+            {"githubHref" in project && project.githubHref ? (
+              <a
+                href={project.githubHref}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="mt-2 inline-block text-sm text-accent hover:underline"
+              >
+                GitHub
+              </a>
+            ) : null}
+            <ul className="mt-2 flex flex-wrap gap-2">
+              {project.tags.map((tag) => (
+                <li
+                  key={tag}
+                  className="border border-border px-2 py-0.5 font-mono text-[0.68rem] text-muted"
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }

@@ -60,6 +60,16 @@ describe("site content", () => {
       "https://github.com/MoShahan/xivi",
     );
 
+    const trove = site.projects.find((project) => project.title === "Trove");
+    expect(trove && "liveHref" in trove && trove.liveHref).toBe(
+      "https://trove-shop.vercel.app/",
+    );
+    expect(trove && "githubHref" in trove && trove.githubHref).toBe(
+      "https://github.com/MoShahan/trove",
+    );
+    expect(trove?.image).toBe("/projects/trove.png");
+    expect(JSON.stringify(site)).not.toMatch(/Aget/i);
+
     const ledger = site.projects.find((project) => project.title === "Ledger Parse");
     expect(ledger && "liveHref" in ledger && ledger.liveHref).toBe(
       "https://ledger-parser-production.up.railway.app/",
@@ -70,6 +80,21 @@ describe("site content", () => {
     );
     expect(theatre && "githubHref" in theatre && theatre.githubHref).toBe(
       "https://github.com/MoShahan/theater-booking",
+    );
+
+    expect(JSON.stringify(site)).not.toMatch(/Tasks Board/i);
+    expect(JSON.stringify(site)).not.toMatch(/tasks-board/i);
+  });
+
+  it("lists side projects including Telegram bots and the YouTube userscript", () => {
+    expect(site.sideProjects.map((project) => project.title)).toEqual([
+      "Gold Rate Bot",
+      "Daily Namaz Bot",
+      "Discord bots",
+      "YouTube 2× Toggle",
+    ]);
+    expect(site.sideProjects[2] && "githubHref" in site.sideProjects[2]).toBe(
+      false,
     );
   });
 

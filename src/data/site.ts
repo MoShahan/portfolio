@@ -130,14 +130,15 @@ export const site = {
     },
     {
       title: "Trove",
-      period: "February 2025",
+      period: "February 2025 – October 2026",
       summary:
-        "Responsive e-commerce storefront: catalog search, category filters, cart, wishlist, and checkout. Public product API plus Firebase email/password auth, gated with Next.js middleware.",
+        "E-commerce storefront for browsing products, saving a wishlist, managing a cart, and checking out. Next.js App Router and Material UI, Firebase email/password auth with cookie sessions and middleware, DummyJSON catalog.",
       liveHref: "https://trove-shop.vercel.app/",
       githubHref: "https://github.com/MoShahan/trove",
       tags: ["Next.js", "TypeScript", "Material UI", "Firebase Auth", "Jest"],
-      image: "/projects/aget-co.png",
-      imageAlt: "Trove storefront with product grid, search, and filters",
+      image: "/projects/trove.png",
+      imageAlt:
+        "Trove catalog with search, category filters, sale prices, and ratings",
     },
     {
       title: "Theater Booking",
@@ -152,17 +153,6 @@ export const site = {
         "Theatre booking UI with a color-coded seat map and order summary",
     },
     {
-      title: " Task Board",
-      period: "August 2026",
-      summary:
-        "Local Kanban board for planning work, persisted in localStorage with no backend. Drag-and-drop and keyboard moves across columns, add/edit/delete modals, search, sort, overdue highlighting, and a light/dark theme.",
-      liveHref: "https://moshahan.github.io/tasks-board/",
-      githubHref: "https://github.com/MoShahan/tasks-board",
-      tags: ["React", "TypeScript", "Vite", "Tailwind CSS"],
-      image: "/projects/kanban.png",
-      imageAlt: "Kanban board with To do, In progress, and Done columns",
-    },
-    {
       title: "Comic Reader",
       period: "August 2026",
       summary:
@@ -171,6 +161,35 @@ export const site = {
       tags: ["React Native", "Expo", "TypeScript", "SQLite", "Zustand"],
       image: "/projects/comic-reader.png",
       imageAlt: "Comic reader mobile app showing a local cover library",
+    },
+  ],
+  sideProjects: [
+    {
+      title: "Gold Rate Bot",
+      summary:
+        "Telegram bot that scrapes daily 22K gold rates from AKGSMA and broadcasts them on a GitHub Actions schedule.",
+      githubHref: "https://github.com/MoShahan/kerala-gold-rate-tg-bot",
+      tags: ["Python", "Telegram", "GitHub Actions"],
+    },
+    {
+      title: "Daily Namaz Bot",
+      summary:
+        "Telegram bot that sends daily prayer timings at 12:01 AM IST, with /setcity to change location.",
+      githubHref: "https://github.com/MoShahan/daily-namaz-bot",
+      tags: ["Python", "Telegram", "GitHub Actions"],
+    },
+    {
+      title: "Discord bots",
+      summary:
+        "A few Discord bots for personal servers - notifications and small automations.",
+      tags: ["Python", "Discord"],
+    },
+    {
+      title: "YouTube 2× Toggle",
+      summary:
+        "Tampermonkey userscript that adds a 2× playback button to the YouTube player bar.",
+      githubHref: "https://github.com/MoShahan/youtube-2x-shortcut",
+      tags: ["JavaScript", "UserScript"],
     },
   ],
   skills: [
@@ -201,7 +220,7 @@ export const site = {
     },
     {
       label: "Quality & tools",
-      items: ["Jest", "Git", "GitHub Actions"],
+      items: ["Jest", "Python", "Git", "GitHub Actions"],
     },
   ],
   education: {

@@ -18,7 +18,6 @@ describe("Projects", () => {
       "https://ledger-parser-production.up.railway.app/",
       "https://trove-shop.vercel.app/",
       "https://moshahan.github.io/theater-booking/",
-      "https://moshahan.github.io/tasks-board/",
     ]);
     expect(
       screen
@@ -30,8 +29,19 @@ describe("Projects", () => {
       "https://github.com/MoShahan/ledger-parser",
       "https://github.com/MoShahan/trove",
       "https://github.com/MoShahan/theater-booking",
-      "https://github.com/MoShahan/tasks-board",
-      "https://github.com/MoShahan/comic-reader-app"
+      "https://github.com/MoShahan/comic-reader-app",
+      "https://github.com/MoShahan/kerala-gold-rate-tg-bot",
+      "https://github.com/MoShahan/daily-namaz-bot",
+      "https://github.com/MoShahan/youtube-2x-shortcut",
     ]);
+    expect(
+      screen.getByRole("heading", { name: "Side projects" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "YouTube 2× Toggle" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByRole("link", { name: /Discord bots/i }),
+    ).not.toBeInTheDocument();
   });
 });

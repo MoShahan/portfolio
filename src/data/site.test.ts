@@ -58,7 +58,7 @@ describe("site content", () => {
       "Tandem",
       "Comic Reader",
       "Anvil",
-      "Ledger Parse",
+      "Ledger Lens",
     ]);
 
     const anvil = site.projects.find((project) => project.title === "Anvil");
@@ -86,10 +86,16 @@ describe("site content", () => {
     expect(trove?.image).toBe("/projects/trove.png");
     expect(JSON.stringify(site)).not.toMatch(/Aget/i);
 
-    const ledger = site.projects.find((project) => project.title === "Ledger Parse");
+    const ledger = site.projects.find((project) => project.title === "Ledger Lens");
     expect(ledger && "liveHref" in ledger && ledger.liveHref).toBe(
-      "https://ledger-parser-production.up.railway.app/",
+      "https://ledger-lens-demo.vercel.app/",
     );
+    expect(ledger && "githubHref" in ledger && ledger.githubHref).toBe(
+      "https://github.com/MoShahan/ledger-lens",
+    );
+    expect(ledger?.image).toBe("/projects/ledger-lens.png");
+    expect(JSON.stringify(site)).not.toMatch(/Ledger Parse/i);
+    expect(JSON.stringify(site)).not.toMatch(/ledger-parser/i);
 
     expect(site.projects.map((project) => project.title)).not.toContain(
       "Theater Booking",

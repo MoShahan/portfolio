@@ -16,7 +16,7 @@ describe("Projects", () => {
       "https://trove-shop.vercel.app/",
       "https://xivi.vercel.app/",
       "https://tandemcrm.vercel.app/",
-      "https://ledger-parser-production.up.railway.app/",
+      "https://ledger-lens-demo.vercel.app/",
     ]);
     expect(
       screen
@@ -28,7 +28,7 @@ describe("Projects", () => {
       "https://github.com/MoShahan/tandem",
       "https://github.com/MoShahan/comic-reader-app",
       "https://github.com/MoShahan/anvil",
-      "https://github.com/MoShahan/ledger-parser",
+      "https://github.com/MoShahan/ledger-lens",
       "https://github.com/MoShahan/kerala-gold-rate-tg-bot",
       "https://github.com/MoShahan/daily-namaz-bot",
       "https://github.com/MoShahan/youtube-2x-shortcut",

@@ -150,16 +150,15 @@ export const site = {
       imageAlt: "Anvil Storybook docs for the Button component with theme controls",
     },
     {
-      title: "Ledger Parse",
+      title: "Ledger Lens",
       period: "September 2026",
       summary:
-        "Invoice review UI: upload a PDF, Gemini fills a fixed schema, a validator flags mismatches, and you confirm or edit. Your edit is the source of truth. React/Vite frontend over Express and Postgres, with extract jobs that retry independently of the file.",
-      liveHref: "https://ledger-parser-production.up.railway.app/",
-      githubHref: "https://github.com/MoShahan/ledger-parser",
-      tags: ["React", "Vite", "Express", "PostgreSQL", "Gemini"],
-      image: "/projects/ledger-parser.png",
-      imageAlt:
-        "Ledger Parse review screen with a PDF invoice beside extracted fields",
+        "Invoice review UI: upload a PDF, Gemini fills a fixed schema, a validator flags mismatches, and you confirm or edit. Your edit is the source of truth. Extracts stay in the browser; React/Vite UI over an Express extract API.",
+      liveHref: "https://ledger-lens-demo.vercel.app/",
+      githubHref: "https://github.com/MoShahan/ledger-lens",
+      tags: ["React", "Vite", "Express", "Gemini"],
+      image: "/projects/ledger-lens.png",
+      imageAlt: "Ledger Lens inbox with sample invoices and PDF upload",
     },
   ],
   frontendProjects: [

@@ -25,6 +25,7 @@ describe("Projects", () => {
         .map((link) => link.getAttribute("href")),
     ).toEqual([
       "https://github.com/MoShahan/xivi",
+      "https://github.com/MoShahan/anvil",
       "https://github.com/MoShahan/tandem",
       "https://github.com/MoShahan/ledger-parser",
       "https://github.com/MoShahan/trove",

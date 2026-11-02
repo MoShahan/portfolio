@@ -52,6 +52,13 @@ describe("site content", () => {
       );
     }
 
+    const anvil = site.projects.find((project) => project.title === "Anvil");
+    expect(anvil && "githubHref" in anvil && anvil.githubHref).toBe(
+      "https://github.com/MoShahan/anvil",
+    );
+    expect(anvil?.image).toBe("/projects/anvil.png");
+    expect(anvil && "liveHref" in anvil).toBe(false);
+
     const xivi = site.projects.find((project) => project.title === "Xivi");
     expect(xivi && "liveHref" in xivi && xivi.liveHref).toBe(
       "https://xivi.vercel.app/",

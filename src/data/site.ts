@@ -106,6 +106,16 @@ export const site = {
       imageAlt: "Xivi home feed with a left sidebar and Everyone / Following tabs",
     },
     {
+      title: "Anvil",
+      period: "October 2026",
+      summary:
+        "Accessible React component library and design system: tokens, light/dark themes, accent palettes, and Storybook docs. ESM package with TypeScript types — Button, Input, Dialog, Tabs, Toast, and more, not a wrapper around another UI kit.",
+      githubHref: "https://github.com/MoShahan/anvil",
+      tags: ["React", "TypeScript", "Storybook", "Vite", "Vitest"],
+      image: "/projects/anvil.png",
+      imageAlt: "Anvil Storybook docs for the Button component with theme controls",
+    },
+    {
       title: "Tandem",
       period: "June 2026 – August 2026",
       summary:

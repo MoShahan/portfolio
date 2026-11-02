@@ -23,6 +23,7 @@ describe("Home page", () => {
     for (const id of [
       "about",
       "work",
+      "frontend",
       "experience",
       "skills",
       "education",

@@ -1,9 +1,9 @@
 IBM Plex Sans and IBM Plex Mono
 Copyright © 2017 IBM Corp.
-SIL Open Font License 1.1 — https://github.com/IBM/plex
+SIL Open Font License 1.1 - https://github.com/IBM/plex
 
 Fraunces
 Copyright 2020 The Fraunces Project Authors
-SIL Open Font License 1.1 — https://github.com/undercasetype/Fraunces
+SIL Open Font License 1.1 - https://github.com/undercasetype/Fraunces
 
 These latin WOFF2 files are vendored so next/font does not fetch Google Fonts at build time.

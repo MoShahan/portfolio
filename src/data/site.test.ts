@@ -91,9 +91,23 @@ describe("site content", () => {
       "https://ledger-parser-production.up.railway.app/",
     );
 
-    expect(JSON.stringify(site)).not.toMatch(/Theater Booking/i);
-    expect(JSON.stringify(site)).not.toMatch(/Tasks Board/i);
-    expect(JSON.stringify(site)).not.toMatch(/tasks-board/i);
+    expect(site.projects.map((project) => project.title)).not.toContain(
+      "Theater Booking",
+    );
+    expect(site.projects.map((project) => project.title)).not.toContain(
+      "Tasks Board",
+    );
+  });
+
+  it("lists frontend-only UI projects separately from featured work", () => {
+    expect(site.frontendProjects.map((project) => project.title)).toEqual([
+      "Tasks Board",
+      "Bayline",
+      "Theater Booking",
+      "Folder UI",
+      "Rock Paper Scissors",
+    ]);
+    expect(site.nav.map((item) => item.href)).toContain("#frontend");
   });
 
   it("lists side projects including Telegram bots and the YouTube userscript", () => {

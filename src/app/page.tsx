@@ -3,6 +3,7 @@ import { Contact } from "@/components/Contact";
 import { Education } from "@/components/Education";
 import { Experience } from "@/components/Experience";
 import { Footer } from "@/components/Footer";
+import { FrontendProjects } from "@/components/FrontendProjects";
 import { Projects } from "@/components/Projects";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Skills } from "@/components/Skills";
@@ -18,6 +19,7 @@ export default function Home() {
         <main id="content" className="lg:w-[58%] lg:py-24">
           <About />
           <Projects />
+          <FrontendProjects />
           <Experience />
           <Skills />
           <Education />

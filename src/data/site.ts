@@ -12,6 +12,7 @@ export const site = {
   nav: [
     { href: "#about", label: "About" },
     { href: "#work", label: "Work" },
+    { href: "#frontend", label: "Frontend" },
     { href: "#experience", label: "Experience" },
     { href: "#skills", label: "Skills" },
     { href: "#education", label: "Education" },
@@ -142,7 +143,7 @@ export const site = {
       title: "Anvil",
       period: "October 2026",
       summary:
-        "Accessible React component library and design system: tokens, light/dark themes, accent palettes, and Storybook docs. ESM package with TypeScript types — Button, Input, Dialog, Tabs, Toast, and more, not a wrapper around another UI kit.",
+        "Accessible React component library and design system: tokens, light/dark themes, accent palettes, and Storybook docs. ESM package with TypeScript types - Button, Input, Dialog, Tabs, Toast, and more, not a wrapper around another UI kit.",
       githubHref: "https://github.com/MoShahan/anvil",
       tags: ["React", "TypeScript", "Storybook", "Vite", "Vitest"],
       image: "/projects/anvil.png",
@@ -159,6 +160,48 @@ export const site = {
       image: "/projects/ledger-parser.png",
       imageAlt:
         "Ledger Parse review screen with a PDF invoice beside extracted fields",
+    },
+  ],
+  frontendProjects: [
+    {
+      title: "Tasks Board",
+      summary:
+        "Task board with customizable columns, board and list views, drag-and-drop, and filters. State stays in localStorage.",
+      liveHref: "https://moshahan.github.io/tasks-board/",
+      githubHref: "https://github.com/MoShahan/tasks-board",
+      tags: ["React", "TypeScript", "Vite", "dnd-kit"],
+    },
+    {
+      title: "Bayline",
+      summary:
+        "Parking-deck board to track available, occupied, and reserved bays, assign vehicles, and add temporary spots, with toast feedback.",
+      liveHref: "https://moshahan.github.io/bayline/",
+      githubHref: "https://github.com/MoShahan/bayline",
+      tags: ["React", "TypeScript", "Redux Toolkit", "Tailwind CSS"],
+    },
+    {
+      title: "Theater Booking",
+      summary:
+        "Movie-theatre seat map with promo codes, GST and fee breakdown, and a booking history. All client-side.",
+      liveHref: "https://moshahan.github.io/theater-booking/",
+      githubHref: "https://github.com/MoShahan/theater-booking",
+      tags: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    },
+    {
+      title: "Folder UI",
+      summary:
+        "Nested folder explorer with expand/collapse, name filter, file-type icons, and a footer that shows the selected file.",
+      liveHref: "https://moshahan.github.io/folder-ui/",
+      githubHref: "https://github.com/MoShahan/folder-ui",
+      tags: ["React", "TypeScript", "Vite"],
+    },
+    {
+      title: "Rock Paper Scissors",
+      summary:
+        "Vanilla HTML, CSS, and JavaScript game with a classic first-website look and a modern match: custom rounds, keyboard play, and object-shaped buttons.",
+      liveHref: "https://moshahan.github.io/rock-paper-scissors/",
+      githubHref: "https://github.com/MoShahan/rock-paper-scissors",
+      tags: ["HTML", "CSS", "JavaScript"],
     },
   ],
   sideProjects: [

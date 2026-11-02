@@ -95,6 +95,18 @@ export const site = {
   ],
   projects: [
     {
+      title: "Trove",
+      period: "February 2025 – October 2026",
+      summary:
+        "E-commerce storefront for browsing products, saving a wishlist, managing a cart, and checking out. Next.js App Router and Material UI, Firebase email/password auth with cookie sessions and middleware, DummyJSON catalog.",
+      liveHref: "https://trove-shop.vercel.app/",
+      githubHref: "https://github.com/MoShahan/trove",
+      tags: ["Next.js", "TypeScript", "Material UI", "Firebase Auth", "Jest"],
+      image: "/projects/trove.png",
+      imageAlt:
+        "Trove catalog with search, category filters, sale prices, and ratings",
+    },
+    {
       title: "Xivi",
       period: "September 2023 – October 2026",
       summary:
@@ -104,16 +116,6 @@ export const site = {
       tags: ["Next.js", "Express", "MongoDB", "Material UI", "JWT"],
       image: "/projects/xivi.png",
       imageAlt: "Xivi home feed with a left sidebar and Everyone / Following tabs",
-    },
-    {
-      title: "Anvil",
-      period: "October 2026",
-      summary:
-        "Accessible React component library and design system: tokens, light/dark themes, accent palettes, and Storybook docs. ESM package with TypeScript types — Button, Input, Dialog, Tabs, Toast, and more, not a wrapper around another UI kit.",
-      githubHref: "https://github.com/MoShahan/anvil",
-      tags: ["React", "TypeScript", "Storybook", "Vite", "Vitest"],
-      image: "/projects/anvil.png",
-      imageAlt: "Anvil Storybook docs for the Button component with theme controls",
     },
     {
       title: "Tandem",
@@ -127,6 +129,26 @@ export const site = {
       imageAlt: "Tandem dashboard with widgets, charts, and notifications",
     },
     {
+      title: "Comic Reader",
+      period: "August 2026",
+      summary:
+        "Local-first Expo/React Native comic reader for CBZ files: filterable cover library and resume-from-last-page reading with no accounts or cloud. SQLite and Zustand persist progress; a windowed pager keeps large issues memory-safe.",
+      githubHref: "https://github.com/MoShahan/comic-reader-app",
+      tags: ["React Native", "Expo", "TypeScript", "SQLite", "Zustand"],
+      image: "/projects/comic-reader.png",
+      imageAlt: "Comic reader mobile app showing a local cover library",
+    },
+    {
+      title: "Anvil",
+      period: "October 2026",
+      summary:
+        "Accessible React component library and design system: tokens, light/dark themes, accent palettes, and Storybook docs. ESM package with TypeScript types — Button, Input, Dialog, Tabs, Toast, and more, not a wrapper around another UI kit.",
+      githubHref: "https://github.com/MoShahan/anvil",
+      tags: ["React", "TypeScript", "Storybook", "Vite", "Vitest"],
+      image: "/projects/anvil.png",
+      imageAlt: "Anvil Storybook docs for the Button component with theme controls",
+    },
+    {
       title: "Ledger Parse",
       period: "September 2026",
       summary:
@@ -137,40 +159,6 @@ export const site = {
       image: "/projects/ledger-parser.png",
       imageAlt:
         "Ledger Parse review screen with a PDF invoice beside extracted fields",
-    },
-    {
-      title: "Trove",
-      period: "February 2025 – October 2026",
-      summary:
-        "E-commerce storefront for browsing products, saving a wishlist, managing a cart, and checking out. Next.js App Router and Material UI, Firebase email/password auth with cookie sessions and middleware, DummyJSON catalog.",
-      liveHref: "https://trove-shop.vercel.app/",
-      githubHref: "https://github.com/MoShahan/trove",
-      tags: ["Next.js", "TypeScript", "Material UI", "Firebase Auth", "Jest"],
-      image: "/projects/trove.png",
-      imageAlt:
-        "Trove catalog with search, category filters, sale prices, and ratings",
-    },
-    {
-      title: "Theater Booking",
-      period: "July 2026",
-      summary:
-        "Interactive theatre seat map with VIP, Premium, and General tiers. Select seats, apply promo codes with rules, and confirm bookings with a GST and convenience-fee breakdown - all client-side, no backend.",
-      liveHref: "https://moshahan.github.io/theater-booking/",
-      githubHref: "https://github.com/MoShahan/theater-booking",
-      tags: ["React", "TypeScript", "Vite", "Vitest"],
-      image: "/projects/theatre-seats.png",
-      imageAlt:
-        "Theatre booking UI with a color-coded seat map and order summary",
-    },
-    {
-      title: "Comic Reader",
-      period: "August 2026",
-      summary:
-        "Local-first Expo/React Native comic reader for CBZ files: filterable cover library and resume-from-last-page reading with no accounts or cloud. SQLite and Zustand persist progress; a windowed pager keeps large issues memory-safe.",
-      githubHref: "https://github.com/MoShahan/comic-reader-app",
-      tags: ["React Native", "Expo", "TypeScript", "SQLite", "Zustand"],
-      image: "/projects/comic-reader.png",
-      imageAlt: "Comic reader mobile app showing a local cover library",
     },
   ],
   sideProjects: [

@@ -52,6 +52,15 @@ describe("site content", () => {
       );
     }
 
+    expect(site.projects.map((project) => project.title)).toEqual([
+      "Trove",
+      "Xivi",
+      "Tandem",
+      "Comic Reader",
+      "Anvil",
+      "Ledger Parse",
+    ]);
+
     const anvil = site.projects.find((project) => project.title === "Anvil");
     expect(anvil && "githubHref" in anvil && anvil.githubHref).toBe(
       "https://github.com/MoShahan/anvil",
@@ -82,13 +91,7 @@ describe("site content", () => {
       "https://ledger-parser-production.up.railway.app/",
     );
 
-    const theatre = site.projects.find(
-      (project) => project.title === "Theater Booking",
-    );
-    expect(theatre && "githubHref" in theatre && theatre.githubHref).toBe(
-      "https://github.com/MoShahan/theater-booking",
-    );
-
+    expect(JSON.stringify(site)).not.toMatch(/Theater Booking/i);
     expect(JSON.stringify(site)).not.toMatch(/Tasks Board/i);
     expect(JSON.stringify(site)).not.toMatch(/tasks-board/i);
   });

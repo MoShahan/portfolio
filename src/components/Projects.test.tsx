@@ -13,24 +13,22 @@ describe("Projects", () => {
         .getAllByRole("link", { name: "Live demo" })
         .map((link) => link.getAttribute("href")),
     ).toEqual([
+      "https://trove-shop.vercel.app/",
       "https://xivi.vercel.app/",
       "https://tandemcrm.vercel.app/",
       "https://ledger-parser-production.up.railway.app/",
-      "https://trove-shop.vercel.app/",
-      "https://moshahan.github.io/theater-booking/",
     ]);
     expect(
       screen
         .getAllByRole("link", { name: "GitHub" })
         .map((link) => link.getAttribute("href")),
     ).toEqual([
-      "https://github.com/MoShahan/xivi",
-      "https://github.com/MoShahan/anvil",
-      "https://github.com/MoShahan/tandem",
-      "https://github.com/MoShahan/ledger-parser",
       "https://github.com/MoShahan/trove",
-      "https://github.com/MoShahan/theater-booking",
+      "https://github.com/MoShahan/xivi",
+      "https://github.com/MoShahan/tandem",
       "https://github.com/MoShahan/comic-reader-app",
+      "https://github.com/MoShahan/anvil",
+      "https://github.com/MoShahan/ledger-parser",
       "https://github.com/MoShahan/kerala-gold-rate-tg-bot",
       "https://github.com/MoShahan/daily-namaz-bot",
       "https://github.com/MoShahan/youtube-2x-shortcut",

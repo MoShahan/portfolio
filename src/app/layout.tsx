@@ -1,24 +1,54 @@
-import { Fraunces, IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
+import localFont from "next/font/local";
 
 import type { Metadata } from "next";
 import "./globals.css";
 
-const sans = IBM_Plex_Sans({
+const sans = localFont({
+  src: [
+    {
+      path: "../fonts/ibm-plex-sans-400.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/ibm-plex-sans-500.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../fonts/ibm-plex-sans-600.woff2",
+      weight: "600",
+      style: "normal",
+    },
+  ],
   variable: "--font-sans-family",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  display: "swap",
 });
 
-const serif = Fraunces({
+const serif = localFont({
+  src: [
+    { path: "../fonts/fraunces-500.woff2", weight: "500", style: "normal" },
+    { path: "../fonts/fraunces-600.woff2", weight: "600", style: "normal" },
+  ],
   variable: "--font-serif-family",
-  subsets: ["latin"],
-  weight: ["500", "600"],
+  display: "swap",
 });
 
-const mono = IBM_Plex_Mono({
+const mono = localFont({
+  src: [
+    {
+      path: "../fonts/ibm-plex-mono-400.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/ibm-plex-mono-500.woff2",
+      weight: "500",
+      style: "normal",
+    },
+  ],
   variable: "--font-mono-family",
-  subsets: ["latin"],
-  weight: ["400", "500"],
+  display: "swap",
 });
 
 const title = "Mohammed Shahan - Frontend Engineer";

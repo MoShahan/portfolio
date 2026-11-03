@@ -119,6 +119,17 @@ export const site = {
       imageAlt: "Xivi home feed with a left sidebar and Everyone / Following tabs",
     },
     {
+      title: "Cadence",
+      period: "June 2022 – November 2026",
+      summary:
+        "Personal music catalog: rate songs, rank artists, and add covers. Vite/React UI with JWT auth; Express and Prisma on MySQL/TiDB, ImageKit uploads, shared Zod validation.",
+      liveHref: "https://cadence-music-web.vercel.app/",
+      githubHref: "https://github.com/MoShahan/cadence",
+      tags: ["React", "Vite", "Express", "Prisma", "MySQL"],
+      image: "/projects/cadence.png",
+      imageAlt: "Cadence home with Top 10 songs and Top 10 artists by average rating",
+    },
+    {
       title: "Tandem",
       period: "June 2026 – August 2026",
       summary:

@@ -15,6 +15,7 @@ describe("Projects", () => {
     ).toEqual([
       "https://trove-shop.vercel.app/",
       "https://xivi.vercel.app/",
+      "https://cadence-music-web.vercel.app/",
       "https://tandemcrm.vercel.app/",
       "https://ledger-lens-demo.vercel.app/",
     ]);
@@ -25,6 +26,7 @@ describe("Projects", () => {
     ).toEqual([
       "https://github.com/MoShahan/trove",
       "https://github.com/MoShahan/xivi",
+      "https://github.com/MoShahan/cadence",
       "https://github.com/MoShahan/tandem",
       "https://github.com/MoShahan/comic-reader-app",
       "https://github.com/MoShahan/anvil",

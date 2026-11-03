@@ -55,11 +55,21 @@ describe("site content", () => {
     expect(site.projects.map((project) => project.title)).toEqual([
       "Trove",
       "Xivi",
+      "Cadence",
       "Tandem",
       "Comic Reader",
       "Anvil",
       "Ledger Lens",
     ]);
+
+    const cadence = site.projects.find((project) => project.title === "Cadence");
+    expect(cadence && "liveHref" in cadence && cadence.liveHref).toBe(
+      "https://cadence-music-web.vercel.app/",
+    );
+    expect(cadence && "githubHref" in cadence && cadence.githubHref).toBe(
+      "https://github.com/MoShahan/cadence",
+    );
+    expect(cadence?.image).toBe("/projects/cadence.png");
 
     const anvil = site.projects.find((project) => project.title === "Anvil");
     expect(anvil && "githubHref" in anvil && anvil.githubHref).toBe(

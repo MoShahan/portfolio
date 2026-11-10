@@ -235,13 +235,6 @@ export const site = {
         "A few Discord bots for personal servers - notifications and small automations.",
       tags: ["Python", "Discord"],
     },
-    {
-      title: "YouTube 2× Toggle",
-      summary:
-        "Tampermonkey userscript that adds a 2× playback button to the YouTube player bar.",
-      githubHref: "https://github.com/MoShahan/youtube-2x-shortcut",
-      tags: ["JavaScript", "UserScript"],
-    },
   ],
   skills: [
     {
@@ -259,10 +252,15 @@ export const site = {
       ],
     },
     {
-      label: "Full-stack",
+      label: "Backend",
       items: [
         "Express",
         "REST APIs",
+      ],
+    },
+    {
+      label: "Database",
+      items: [
         "PostgreSQL",
         "MongoDB",
         "Prisma",

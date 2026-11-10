@@ -47,9 +47,9 @@ describe("site content", () => {
   it("features all projects with images on disk", () => {
     for (const project of site.projects) {
       expect(project.image).toMatch(/^\/projects\//);
-      expect(existsSync(path.join(publicDir, project.image.replace(/^\//, "")))).toBe(
-        true,
-      );
+      expect(
+        existsSync(path.join(publicDir, project.image.replace(/^\//, ""))),
+      ).toBe(true);
     }
 
     expect(site.projects.map((project) => project.title)).toEqual([
@@ -62,7 +62,9 @@ describe("site content", () => {
       "Ledger Lens",
     ]);
 
-    const cadence = site.projects.find((project) => project.title === "Cadence");
+    const cadence = site.projects.find(
+      (project) => project.title === "Cadence",
+    );
     expect(cadence && "liveHref" in cadence && cadence.liveHref).toBe(
       "https://cadence-music-web.vercel.app/",
     );
@@ -96,7 +98,9 @@ describe("site content", () => {
     expect(trove?.image).toBe("/projects/trove.png");
     expect(JSON.stringify(site)).not.toMatch(/Aget/i);
 
-    const ledger = site.projects.find((project) => project.title === "Ledger Lens");
+    const ledger = site.projects.find(
+      (project) => project.title === "Ledger Lens",
+    );
     expect(ledger && "liveHref" in ledger && ledger.liveHref).toBe(
       "https://ledger-lens-demo.vercel.app/",
     );
@@ -131,7 +135,6 @@ describe("site content", () => {
       "Gold Rate Bot",
       "Daily Namaz Bot",
       "Discord bots",
-      "YouTube 2× Toggle",
     ]);
     expect(site.sideProjects[2] && "githubHref" in site.sideProjects[2]).toBe(
       false,

@@ -33,13 +33,9 @@ describe("Projects", () => {
       "https://github.com/MoShahan/ledger-lens",
       "https://github.com/MoShahan/kerala-gold-rate-tg-bot",
       "https://github.com/MoShahan/daily-namaz-bot",
-      "https://github.com/MoShahan/youtube-2x-shortcut",
     ]);
     expect(
       screen.getByRole("heading", { name: "Side projects" }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: "YouTube 2× Toggle" }),
     ).toBeInTheDocument();
     expect(
       screen.queryByRole("link", { name: /Discord bots/i }),

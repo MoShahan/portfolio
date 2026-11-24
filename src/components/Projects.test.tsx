@@ -17,6 +17,8 @@ describe("Projects", () => {
       "https://xivi.vercel.app/",
       "https://cadence-music-web.vercel.app/",
       "https://tandemcrm.vercel.app/",
+      "https://moshahan.github.io/comic-vault/",
+      "https://moshahan.github.io/muze/",
       "https://ledger-lens-demo.vercel.app/",
     ]);
     expect(
@@ -28,7 +30,8 @@ describe("Projects", () => {
       "https://github.com/MoShahan/xivi",
       "https://github.com/MoShahan/cadence",
       "https://github.com/MoShahan/tandem",
-      "https://github.com/MoShahan/comic-reader-app",
+      "https://github.com/MoShahan/comic-vault",
+      "https://github.com/MoShahan/muze",
       "https://github.com/MoShahan/anvil",
       "https://github.com/MoShahan/ledger-lens",
       "https://github.com/MoShahan/kerala-gold-rate-tg-bot",

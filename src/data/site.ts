@@ -141,14 +141,26 @@ export const site = {
       imageAlt: "Tandem dashboard with widgets, charts, and notifications",
     },
     {
-      title: "Comic Reader",
-      period: "August 2026",
+      title: "Comic Vault",
+      period: "August 2026 – November 2026",
       summary:
-        "Local-first Expo/React Native comic reader for CBZ files: filterable cover library and resume-from-last-page reading with no accounts or cloud. SQLite and Zustand persist progress; a windowed pager keeps large issues memory-safe.",
-      githubHref: "https://github.com/MoShahan/comic-reader-app",
+        "Local-first Expo/React Native comic reader for CBZ files: filterable cover library, folder import on Android, and resume-from-last-page reading with no accounts or cloud. SQLite and Zustand persist progress; a windowed pager keeps large issues memory-safe.",
+      liveHref: "https://moshahan.github.io/comic-vault/",
+      githubHref: "https://github.com/MoShahan/comic-vault",
       tags: ["React Native", "Expo", "TypeScript", "SQLite", "Zustand"],
-      image: "/projects/comic-reader.png",
-      imageAlt: "Comic reader mobile app showing a local cover library",
+      image: "/projects/comic-vault.png",
+      imageAlt: "Comic Vault mobile app showing a local cover library",
+    },
+    {
+      title: "Muze",
+      period: "November 2026",
+      summary:
+        "Offline Expo/React Native music player for Android: scans on-device audio including FLAC, vinyl now-playing with waveform seek, playlists and favorites, plus a home-screen widget. No streaming, accounts, or cloud.",
+      liveHref: "https://moshahan.github.io/muze/",
+      githubHref: "https://github.com/MoShahan/muze",
+      tags: ["React Native", "Expo", "TypeScript", "Expo Router"],
+      image: "/projects/muze.png",
+      imageAlt: "Muze now-playing screen with vinyl-style album art and transport controls",
     },
     {
       title: "Anvil",

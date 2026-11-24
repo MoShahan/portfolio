@@ -57,10 +57,35 @@ describe("site content", () => {
       "Xivi",
       "Cadence",
       "Tandem",
-      "Comic Reader",
+      "Comic Vault",
+      "Muze",
       "Anvil",
       "Ledger Lens",
     ]);
+
+    const comicVault = site.projects.find(
+      (project) => project.title === "Comic Vault",
+    );
+    expect(comicVault && "liveHref" in comicVault && comicVault.liveHref).toBe(
+      "https://moshahan.github.io/comic-vault/",
+    );
+    expect(
+      comicVault && "githubHref" in comicVault && comicVault.githubHref,
+    ).toBe("https://github.com/MoShahan/comic-vault");
+    expect(comicVault?.image).toBe("/projects/comic-vault.png");
+    expect(site.projects.map((project) => project.title)).not.toContain(
+      "Comic Reader",
+    );
+    expect(JSON.stringify(site)).not.toMatch(/comic-reader-app/i);
+
+    const muze = site.projects.find((project) => project.title === "Muze");
+    expect(muze && "liveHref" in muze && muze.liveHref).toBe(
+      "https://moshahan.github.io/muze/",
+    );
+    expect(muze && "githubHref" in muze && muze.githubHref).toBe(
+      "https://github.com/MoShahan/muze",
+    );
+    expect(muze?.image).toBe("/projects/muze.png");
 
     const cadence = site.projects.find(
       (project) => project.title === "Cadence",
